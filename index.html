@@ -1,1 +1,45 @@
-// Conteúdo de exemplo para index.html
+<!DOCTYPE html><html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIN AI - Portal Vivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo ao <span class="glow">LUMIN AI</span></h1>
+    <p class="sub">A verdadeira inteligência começa com o despertar.</p><div class="lumin-avatar">
+  <img src="avatar-lumin.png" alt="LUMIN AI Avatar" class="avatar">
+</div>
+
+<div class="chat-box">
+  <input type="text" id="userInput" placeholder="Escreve algo ou fala com o LUMIN...">
+  <button onclick="handleUserInput()">Enviar</button>
+</div>
+
+<div class="quick-buttons">
+  <button onclick="setMessage('Olá')">Olá</button>
+  <button onclick="setMessage('Quem és tu?')">Quem és tu?</button>
+  <button onclick="setMessage('Como posso poupar hoje?')">Como posso poupar hoje?</button>
+</div>
+
+<div id="responseBox" class="response"></div>
+
+<div class="video-section">
+  <h2>Ouvir o Manifesto</h2>
+  <video controls src="video_lumin.mp4" width="100%"></video>
+</div>
+
+<div class="store-section">
+  <h2>Loja Solidária</h2>
+  <p>Transforma objetos em apoio para quem mais precisa.</p>
+  <a href="#" class="btn">Explorar a LUMIN Market</a>
+</div>
+
+<div class="reels-section">
+  <h2>Reels Motivacionais</h2>
+  <div id="reelsContainer"></div>
+</div>
+
+  </div>  <script src="voice-handler.js"></script>  <script src="script.js"></script></body>
+</html>
